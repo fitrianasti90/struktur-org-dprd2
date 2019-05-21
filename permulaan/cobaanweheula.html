@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="jquery.orgchart.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="jquery.jOrgChart.js"></script>
+    <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+	<meta name="viewport" content="width=device-width" >
+  	<meta name="viewport" content="width=320" >
+	<meta name="viewport" content="maximum-scale=1" >
+   	<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/jquery.jOrgChart.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+    <link href="css/prettify.css" type="text/css" rel="stylesheet" />
+
+    <script type="text/javascript" src="prettify.js"></script>
+    
+    <!-- jQuery includes -->
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-ui.min.js"></script>
+    
+    <script src="jquery.jOrgChart.js"></script>
+</head>
+<body>
+	<div class="container">
+    <div class="row">
+        <ul id="tree-data" style="display:none">
+            <li id="root">
+                Direktorat Utama
+                <ul>
+                    <li id="node1">
+                       Direktorat Operasi
+                    </li>
+                    <li id="node2">
+                       Direktorat Investasi
+                    </li>
+                    <li id="node3">
+                       Direktorat Umum
+                    </li>
+                    <li id="node4">
+                       Direktorat Keuangan
+                    </li>
+                    <li id="node5">
+                       Direktorat Informasi
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    <div id="tree-view"></div>  
+    
+    <script>
+        $(document).ready(function () {
+        // create a tree
+        $("#tree-data").jOrgChart({
+            chartElement: $("#tree-view"), 
+            nodeClicked: nodeClicked
+        });
+        // lighting a node in the selection
+        function nodeClicked(node, type) {
+            node = node || $(this);
+            $('.jOrgChart .selected').removeClass('selected');
+                node.addClass('selected');
+            }
+        });
+    </script>       
+    </div>
+</div>
+
+</body>
+</html>

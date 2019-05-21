@@ -1,0 +1,88 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+html,body{
+  margin:auto;
+  text-align: center;
+  background-color: #CCC;
+  height: 100%;
+  vertical-align: middle;
+}
+hr{
+	color:black;
+}
+img{
+width: 90%;
+align-items: left;
+}
+#profil{
+	width:22%;
+}
+
+td,
+td ul li{
+	vertical-align: center;
+}
+.container{
+	padding-top: 10%;
+	padding-right: 15%;
+	padding-left: 15%;
+	padding-bottom: 20%;
+	background: white;
+	font-family: cambria;
+	box-shadow: 1px 1px 10px 1px grey;
+	display: flex;
+	align-items: center;
+}
+.data{
+	margin: 10% auto;
+}
+td{
+	width: 30%;
+}
+.kolom{
+	width: 2%;
+}
+.isi{
+	width: 1%;
+	vertical-align: top;
+}
+.jbt{
+	font-size: 20px;
+}
+.jumbotron{
+	text-decoration: none;
+	color:  #2F4F4F;
+	text-align: center;
+}
+.jumbotron:hover ,  .jumbotron:focus
+{
+	text-decoration: none;
+	background: #B0E0E6;
+	color: grey;
+}
+.batas{
+	width: 20%;
+}
+.batas2{
+	width: 5%;
+}
+.tulis:hover{
+	text-decoration: none;
+	
+}
+.ukur{
+width: 5%;
+}
+#ukuran{
+	width: 110px;
+	height: 80px;
+	border-radius: 0px;
+	background: #B0E0E6;
+}
+.warni{
+	color: grey;
+	text-align: center;
+	vertical-align: middle;
+}

@@ -1,0 +1,46 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+html,body{
+  margin:auto;
+  text-align: center;
+  background-color: #CCC;
+  height: 100%;
+}
+
+img{
+width: 160px;
+height: 160px;
+}
+
+td,
+td ul li{
+	vertical-align: center;
+}
+.container{
+	padding-top: 10%;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-bottom: 20%;
+	background: white;
+	font-family: cambria;
+	box-shadow: 1px 1px 10px 1px grey;
+	display: flex;
+	align-items: center;
+}
+.data{
+	margin: 10% auto;
+}
+td{
+	width: 25%;
+}
+.kolom{
+width: 5%;
+}
+.isi{
+	width: 1%;
+}
+.jbt{
+	font-size: 20px;
+}

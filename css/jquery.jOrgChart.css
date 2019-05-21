@@ -1,0 +1,268 @@
+/* Basic styling */
+/* Draw the lines */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+.jOrgChart{
+    
+  width: 100%;
+}
+.jOrgChart .line {
+  height                : 10px;
+  width                 : 2px;
+}
+
+.jOrgChart .down {
+  background-color 		: black;	
+  margin 				: 0px auto;
+}
+
+.jOrgChart .top {
+  border-top          : 2px solid black;
+}
+
+.jOrgChart .left {
+  border-right          : 2px solid black;
+
+}
+
+.jOrgChart .right {
+  border-left           : 2px solid black;
+
+}
+
+/* node cell */
+.jOrgChart td{
+  text-align            : center;
+  vertical-align        : middle;
+  padding               : 0;
+}
+.jOrgChart li{
+  vertical-align: middle;
+  text-align: center;
+}
+/* The node */
+.jOrgChart .node {
+  border:2px solid  black;
+  background: white;
+  display               : inline-block;
+  width                 : 250px;
+  height                : 130px;
+  margin                : 0 20px;
+  vertical-align:  middle;
+  text-align: center;
+  
+
+/* jQuery drag 'n drop */
+}
+.node2 {
+  border:2px solid  black;
+  background: white;
+  display               : inline-block;
+  width                 : 106%;
+  height                : 40px;
+  margin                : 0 5px;
+  vertical-align:  middle;
+  text-align: center;
+  padding-top: 4px;
+  font-size: 18px;
+  
+
+/* jQuery drag 'n drop */
+}
+
+
+*{
+  padding: 0px;
+  text-align: center;
+  vertical-align: middle;
+  margin-: 0px;
+}
+label{
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+}
+a li .node{
+  text-align: center;
+  vertical-align: middle;
+}
+html,body{
+  margin:auto;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  background-color: #CCC;
+  height: 100%;
+  vertical-align: middle;
+ 
+}
+.row{
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  vertical-align: middle;
+  font-size: 18px;
+}
+.container{
+  background: white;
+  font-family: cambria;
+  box-shadow: 1px 1px 10px 1px grey;
+  text-align: center;
+  vertical-align: middle;
+
+  padding-top: 2%;
+  padding-right: 13%;
+  padding-left: 13%;
+  padding-bottom: 8.9%;
+
+
+}
+ol{
+  width: 90%;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 5%;
+}
+.jdl{
+  padding-top: 3%;
+}
+a{
+  text-decoration: none;
+  color: black;
+  vertical-align: middle;
+}
+a:hover,  a:focus{
+  text-decoration: none;
+  color: grey;
+}
+.bawah{
+  padding-top:18px;
+}
+
+@media screen and (max-width: 960px) {
+.jOrgChart .node {
+  border:2px solid  black;
+  background: white;
+  display               : inline-block;
+  width                 : 100px;   
+  height                : 100px;
+  margin                : 0 20px;
+  vertical-align:  middle;
+  text-align: center;
+  font-size: 12px;
+  
+}
+  .bawah{
+    padding-top: 12px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .container{
+
+  padding-top: 2%;
+  padding-right: 13%;
+  padding-left: 13%;
+  padding-bottom: 8.9%;
+} 
+}
+
+
+@media screen and (max-width: 460px) {
+
+.jOrgChart .node {
+  border:2px solid  black;
+  background: white;
+  display               : inline-block;
+  width                 : 100px;   
+  height                : 100px;
+  margin                : 0 20px;
+  vertical-align:  middle;
+  text-align: center;
+  font-size: 12px;
+  
+}
+  .bawah{
+    padding-top: 12px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+  } 
+.container{
+  padding-top: 2%;
+  padding-right: 13%;
+  padding-left: 13%;
+  padding-bottom: 8.9%;
+}
+  } 
+
+@media screen and (max-width:1200px) and ( min-width: 960px)
+ {
+
+.jOrgChart .node {
+  border:2px solid  black;
+  background: white;
+  display               : inline-block;
+  width                 : 160px;   
+  height                : 100px;
+  margin                : 0 20px;
+  vertical-align:  middle;
+  text-align: center;
+  font-size: 12px;
+  
+}
+  .bawah{
+    padding-top: 12px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+  } 
+
+.container{
+  padding-top: 2%;
+  padding-right: 13%;
+  padding-left: 13%;
+  padding-bottom: 8.9%;
+
+}
+  }
+  @media screen and (max-width: 400px) {
+
+.jOrgChart .node {
+  border:2px solid  black;
+  background: white;
+  display               : inline-block;
+  width                 : 65px;   
+  height                : 65px;
+  margin                : 0 20px;
+  vertical-align:  middle;
+  text-align: center;
+  font-size: 8px;
+  
+}
+  .bawah{
+    padding-top: 12px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+  } 
+.container{
+  padding-top: 2%;
+  padding-right: 13%;
+  padding-left: 13%;
+  padding-bottom: 8.9%;
+}
+h2{
+  font-size: 16px;
+}
+.node2{
+  font-size: 8px;
+}
+  }
+  .node2{
+  font-size: 8px;
+  height: 20px;
+
+} 
+}
+}

@@ -1,0 +1,136 @@
+  <!DOCTYPE html>
+<html>
+<head meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Struktur Organisasi DPRD</title>
+  	<meta name="viewport" content="width=device-width" >
+  	<meta name="viewport" content="width=320" >
+	<meta name="viewport" content="maximum-scale=1" >
+  <meta name="viewport" content="initial-scale=1">
+  <meta charset="utf-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   	<link rel="stylesheet" href="css/bootstrap.min.css">
+   	<link rel="stylesheet" href="css/jquery.jOrgChart.css"/>
+  	
+  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  	<script type="text/javascript" src="js/prettify.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jOrgChart.js"></script>
+
+</head>
+<body>
+<div class="container" align="center">
+	
+	<h2 class="jdl">Struktur Organisasi Sekertariat DPRD</h2>
+	<hr/><br><br>
+	<div class="row">
+        <ul class="tree-data" id="tree-data"  style="display:none">
+           <a href="pegawai/sekwan.html"><li id="root">
+                <label class="bawah"><br>Sekretaris DPRD</label></a>
+                <ul class="nodee">
+                    <a href="pegawai/kabagKeuangan&Program.html">
+                   	<li class="node"  id="node1" >
+                      <label><br>Bagian Keuangan<br>dan Program</label></a>
+                      <ul>
+  <a href="pegawai/kasubagKeuangan.html">
+  <li><label class="bawah"><br>Sub Bagian Keuangan</label>
+  </a>
+    <ul>
+      <a href="pegawai/kasubagProgram.html">
+      <li><label class="bawah"><br>Sub Bagian Program</label>
+      </a>
+        <ul>
+          <a href="pegawai/kasubagVerifikasi&Pelaporan.html">
+          <li><label><br>Sub Bagian Verifikasi dan Pelaporan</label>
+          </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+                    </li> 
+                	<a href="pegawai/kabagAdministrasiKesekretariatan.html">
+                    <li class="node" id="node2" >
+                       <label><br>Bagian Administrasi kesekretariatan</label>
+                	</a>
+                  <ul>
+  <a href="pegawai/kasubagTataUsaha&Kepegawaian.html">
+  <li><label><br>Sub Bagian TU dan Kepegawaian</label>
+  </a>
+    <ul>
+      <a href="pegawai/kasubagRumahTangga.html">
+      <li><label class="bawah"><br>Sub Bagian Rumah Tangga</label>
+      </a>
+        <ul>
+          <a href="pegawai/kasubagPerlengkapan.html">
+          <li><label class="bawah"><br>Sub Bagian Perlengkapan</label>
+          </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+                    </li>
+                	<a  href="pegawai/kabagKajian&Legislasi.html">
+                    <li class="node" id="node3" >
+                       <label><br>Bagian Kajian<br>dan Legislasi</label>
+                	</a>
+                  <ul>
+  <a href="pegawai/cucuRukminingsih.html">
+  <li><label><br>Sub Bagian Hukum dan Perundangan</label>
+  </a>
+    <ul>
+      <a href="pegawai/kasubagPersidangan&Risalah.html">
+      <li><label><br>Sub Bagian Persidangan dan Risalah</label>
+      </a>
+        <ul>
+          <a href="pegawai/kasubagKeprotokolan&Humas.html">
+          <li><label><br>Sub Bagian Keprotokolan dan Humas</label>
+          </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    <div id="tree-view"></div>  
+    
+    <script>
+        $(document).ready(function () {
+        // create a tree
+        $("#tree-data").jOrgChart({
+            chartElement: $("#tree-view"), 
+            nodeClicked: nodeClicked
+        });
+        // lighting a node in the selection
+        function nodeClicked(node, type) {
+            node = node || $(this);
+            $('.jOrgChart .selected').removeClass('selected');
+                node.addClass('selected');
+            }
+        });
+    </script>  
+    </div> 
+    <BR>    
+        <a href="#"><label class="node2">Tenaga Ahli Fraksi</label></a>
+</div>
+</body>
+</html>
